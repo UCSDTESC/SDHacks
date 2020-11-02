@@ -126,25 +126,25 @@ const tierOnePartner = [
         name: 'ACM',
         logo: '/partners/ACM logo.png',
         link: 'http://www.acm.org/',
-        width: '60'
+        width: '100'
     },
     {
         name: 'Open Source',
         logo: '/partners/opensource.png',
         link: 'https://os-ucsd.ucsd.edu/',
-        width: '60'
+        width: '100'
     },
     {
         name: 'CSES',
         logo: '/partners/cses.png',
         link: 'https://cses.ucsd.edu/#/',
-        width: '60'
+        width: '100'
     },
     {
         name: 'DS3',
         logo: '/partners/ds3.png',
         link: 'https://www.facebook.com/DS3UCSD/',
-        width: '60'
+        width: '100'
     }
 ].map(x => ({...x, tier: 3}));
 
@@ -154,25 +154,25 @@ const tierTwoPartner = [
         logo: '/partners/efc.jpeg',
         // should update website link
         link: '',
-        width: '55'
+        width: '100'
     },
     {
         name: 'IEEE',
         logo: '/partners/ieee.png',
         link: 'http://www.ieee.org/portal/index.jsp',
-        width: '80'
+        width: '100'
     },
     {
         name: 'SWE',
         logo: '/partners/swe.png',
         link: 'http://swe.ucsd.edu/',
-        width: '55'
+        width: '100'
     },
     {
         name: 'Women in Computing',
         logo: '/partners/wic.png',
         link: 'https://wic.ucsd.edu/',
-        width: '70'
+        width: '100'
     }
 ].map(x => ({...x, tier: 3}));
 

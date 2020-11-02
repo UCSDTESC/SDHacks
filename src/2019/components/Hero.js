@@ -75,7 +75,7 @@ class Hero extends Component {
                                     <HeroContent>February 19 - 21, 2021</HeroContent>
                                     <HeroContent>Completely Virtual</HeroContent>
 
-                                    <Button href="https://www.tesc.events/register/sdhacks2019" target="_blank" className="text-white">
+                                    {/* <Button href="https://www.tesc.events/register/sdhacks2019" target="_blank" className="text-white">
                                         <CTA className="btn btn-outline-light" >
                                             Apply
                                         </CTA>                      
@@ -84,7 +84,7 @@ class Hero extends Component {
                                         <CTA className="btn btn-outline-light" >
                                             Volunteer
                                         </CTA>                      
-                                    </Button>
+                                    </Button> */}
                                 </HeroCopy>
                             </div>
                         </Container>
