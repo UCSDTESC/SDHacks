@@ -1,15 +1,30 @@
-// $theme-colors: (
-//   "primary": #ffcc35,
-//   "secondary": #0419c1,
-//   "light": #f7f7f7,
-//   "dark": #1e1c21,
-// );
+$theme-colors: (
+    'orange': #e15c35,
+    'orange-light': #fedbce,
+    'cyan': #44b5c5,
+    'green': #81cb72,
+    'dark': #191826,
+);
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1516px,
+);
 
 $enable-shadows: true;
 $enable-responsive-font-sizes: true;
 
-// $font-family-base: 'Inter', sans-serif;
-// $headings-font-family: 'Playfair Display', serif;
-// $body-bg: map-get($theme-colors, 'light');
+$font-family-base: 'Trap', sans-serif;
+$font-size-base: $font-size-base * 1.5;
 
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+$navbar-padding-y: $spacer * 2;
+$navbar-nav-link-padding-x: 1em;
+$navbar-brand-font-size: 40px;
+$navbar-light-color: theme-color('orange');
+$navbar-light-hover-color: theme-color-level('orange', 10);
+
+$navbar-light-brand-color: $navbar-light-color;
+
+@import '../../node_modules/bootstrap/scss/bootstrap';
