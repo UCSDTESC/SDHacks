@@ -10,8 +10,12 @@ const Header = () => {
             css={`
                 font-weight: 900;
 
-                .navbar-brand span {
-                    color: var(--dark);
+                .navbar-brand {
+                    transition: color 0.1s;
+
+                    span {
+                        color: var(--dark);
+                    }
                 }
 
                 .navbar-nav {

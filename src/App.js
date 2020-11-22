@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 
+import Hero from './components/Hero';
+
 class SDHacksPage extends Component {
     render() {
-        return <>main!</>;
+        return (
+            <>
+                <Hero />
+            </>
+        );
     }
 }
 
