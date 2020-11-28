@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const About = () => {
     return (
-        <AboutSection>
+        <AboutSection className="about">
             <StyledContainer>
                 <Row>
                     <Col xl={5} lg={6}>

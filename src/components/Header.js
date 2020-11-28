@@ -1,8 +1,34 @@
-import React from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import 'styled-components/macro';
+import $ from 'jquery';
 
 const Header = () => {
+    const navLinks = useMemo(
+        () => [
+            { name: 'about', href: '#about', className: 'about' },
+            { name: 'contact', href: '#contact', className: 'contact' },
+        ],
+        []
+    );
+
+    useEffect(() => {
+        navLinks.forEach(({ href, className }) => {
+            $(`a[href='${href}']`).on('click', () => {
+                $('html,body').animate(
+                    {
+                        scrollTop: $(`.${className}`).offset().top,
+                    },
+                    'slow'
+                );
+            });
+        });
+
+        return () => {
+            navLinks.forEach(({ href }) => $(`a[href='${href}']`).off());
+        };
+    }, [navLinks]);
+
     return (
         <Navbar
             bg="orange-light"
@@ -36,8 +62,11 @@ const Header = () => {
                 <Navbar.Toggle aria-controls="navbar-nav" />
                 <Navbar.Collapse id="navbar-nav">
                     <Nav className="ml-auto">
-                        <Nav.Link href="#about">About</Nav.Link>
-                        <Nav.Link href="#contact">Contact</Nav.Link>
+                        {navLinks.map(({ name, href }, i) => (
+                            <Nav.Link href={href} key={i}>
+                                {name}
+                            </Nav.Link>
+                        ))}
                     </Nav>
                 </Navbar.Collapse>
             </Container>
