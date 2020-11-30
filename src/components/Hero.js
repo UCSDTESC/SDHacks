@@ -1,8 +1,8 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Button } from 'react-bootstrap';
 import styled from 'styled-components';
 
-import Building from '../assets/building-hero.png';
+import { ReactComponent as Building } from '../assets/building-hero.svg';
 import { ReactComponent as Train } from '../assets/train.svg';
 import { ReactComponent as Trees } from '../assets/trees.svg';
 
@@ -16,12 +16,16 @@ const Hero = () => {
                     hacks
                 </h1>
                 <h2>February 19-21, 2021</h2>
-                <img
-                    src={Building}
-                    alt="some building at UCSD"
-                    className="building-img"
-                />
+                <Button
+                    size="lg"
+                    href="https://www.tesc.events/register/sdhacks2021"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Apply Now
+                </Button>
             </Container>
+            <Building className="building-img" />
             <Train className="train-img" />
             <Trees className="trees-img" />
         </HeroWrapper>
@@ -35,6 +39,10 @@ const HeroWrapper = styled.section`
     display: flex;
     align-items: center;
     position: relative;
+
+    .container {
+        z-index: 1;
+    }
 
     h1 {
         font-weight: 900;
@@ -59,6 +67,10 @@ const HeroWrapper = styled.section`
         top: 0;
         right: 0;
         width: 30%;
+
+        @media (max-width: 576px) {
+            display: none;
+        }
     }
 
     .train-img {

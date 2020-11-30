@@ -1,3 +1,9 @@
 @import '../../node_modules/bootstrap/scss/bootstrap';
 @import 'variables';
 @import 'font';
+
+@include media-breakpoint-down(sm) {
+    #mlh-trust-badge {
+        left: 20px;
+    }
+}

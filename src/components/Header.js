@@ -32,7 +32,7 @@ const Header = () => {
     return (
         <Navbar
             bg="orange-light"
-            expand="lg"
+            expand="sm"
             css={`
                 font-weight: 900;
 
@@ -55,7 +55,7 @@ const Header = () => {
             `}
         >
             <Container>
-                <Navbar.Brand href="#">
+                <Navbar.Brand href="#" className="mx-auto mr-md-auto">
                     SD
                     <span>hacks</span>
                 </Navbar.Brand>
