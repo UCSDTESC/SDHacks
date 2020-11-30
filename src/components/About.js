@@ -45,8 +45,8 @@ const AboutSection = styled.section`
 
 const StyledContainer = styled(Container)`
     color: white;
-    width: 100%;
-    padding: 5rem 0;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     font-family: Trap, sans-serif;
 `;
 
