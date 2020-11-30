@@ -1,16 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter} from 'react-router-dom';
-
-import 'bootstrap/dist/css/bootstrap.css'
-import './index.css';
+import { BrowserRouter } from 'react-router-dom';
 
 import Routes from './Routes';
+import './scss/main.scss';
 
-import * as serviceWorker from './serviceWorker';
-
-ReactDOM.render(<BrowserRouter>
-        <Routes />
-    </BrowserRouter>, document.getElementById('app'));
-
-serviceWorker.unregister();
+ReactDOM.render(
+    <>
+        <BrowserRouter>
+            <Routes />
+        </BrowserRouter>
+    </>,
+    document.getElementById('app')
+);

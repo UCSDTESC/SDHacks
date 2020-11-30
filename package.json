@@ -4,14 +4,16 @@
   "private": true,
   "dependencies": {
     "airtable": "^0.10.0",
-    "bootstrap": "^4.3.1",
+    "bootstrap": "^4.5.3",
     "jquery": "^3.5.1",
     "moment": "^2.24.0",
+    "node-sass": "^4.14.1",
     "react": "^16.8.6",
+    "react-bootstrap": "^1.4.0",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
     "react-scripts": "^3.4.4",
-    "styled-components": "^4.3.2"
+    "styled-components": "^4.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -33,5 +35,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "prettier": "2.2.0"
   }
 }
