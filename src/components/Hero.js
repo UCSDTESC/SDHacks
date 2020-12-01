@@ -9,13 +9,14 @@ import { ReactComponent as Trees } from '../assets/trees.svg';
 const Hero = () => {
     return (
         <HeroWrapper>
-            <Container>
+            <Container className="mb-5">
                 <h1>
                     <span>SD</span>
                     <br />
                     hacks
                 </h1>
                 <h2>February 19-21, 2021</h2>
+                <h3 className="mb-4">Completely Virtual</h3>
                 <Button
                     size="lg"
                     href="https://www.tesc.events/register/sdhacks2021"

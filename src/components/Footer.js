@@ -20,7 +20,7 @@ const Footer = () => {
                     </Col>
                     <Col>
                         <h2 className="text-center text-md-left">
-                            trtiton engineering
+                            triton engineering
                             <br />
                             student council
                         </h2>

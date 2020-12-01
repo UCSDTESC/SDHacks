@@ -3,6 +3,8 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 import 'styled-components/macro';
 import $ from 'jquery';
 
+import Logo from '../assets/logo.svg';
+
 const Header = () => {
     const navLinks = useMemo(
         () => [
@@ -56,8 +58,7 @@ const Header = () => {
         >
             <Container>
                 <Navbar.Brand href="#" className="mx-auto mr-md-auto">
-                    SD
-                    <span>hacks</span>
+                    <img src={Logo} alt="logo" height="100" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbar-nav" />
                 <Navbar.Collapse id="navbar-nav">
