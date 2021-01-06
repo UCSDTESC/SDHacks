@@ -3,23 +3,20 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 import 'styled-components/macro';
 import $ from 'jquery';
 
-import Logo from '../assets/logo.svg';
+import Logo from '../assets/logo-header.png';
 
 const Header = () => {
     const navLinks = useMemo(
-        () => [
-            { name: 'about', href: '#about', className: 'about' },
-            { name: 'contact', href: '#contact', className: 'contact' },
-        ],
+        () => ['about', 'tracks', 'faq', 'sponsors', 'contact'],
         []
     );
 
     useEffect(() => {
-        navLinks.forEach(({ href, className }) => {
-            $(`a[href='${href}']`).on('click', () => {
+        navLinks.forEach((name) => {
+            $(`a[href='#${name}']`).on('click', () => {
                 $('html,body').animate(
                     {
-                        scrollTop: $(`.${className}`).offset().top,
+                        scrollTop: $(`.${name}`).offset().top,
                     },
                     'slow'
                 );
@@ -34,15 +31,16 @@ const Header = () => {
     return (
         <Navbar
             bg="orange-light"
-            expand="sm"
+            expand="lg"
             css={`
                 font-weight: 900;
+                font-size: 18px;
 
-                .navbar-brand {
-                    transition: color 0.1s;
+                .navbar-brand img {
+                    margin-left: 45px;
 
-                    span {
-                        color: var(--dark);
+                    @media (max-width: 576px) {
+                        height: 25px;
                     }
                 }
 
@@ -57,20 +55,33 @@ const Header = () => {
             `}
         >
             <Container>
-                <Navbar.Brand href="#" className="mx-auto mr-md-auto">
-                    <img src={Logo} alt="logo" height="100" />
+                <Navbar.Brand href="#home" className="mx-auto mr-md-auto">
+                    <img src={Logo} alt="logo" height="40" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbar-nav" />
                 <Navbar.Collapse id="navbar-nav">
                     <Nav className="ml-auto">
-                        {navLinks.map(({ name, href }, i) => (
-                            <Nav.Link href={href} key={i}>
+                        {navLinks.map((name, i) => (
+                            <Nav.Link href={`#${name}`} key={i}>
                                 {name}
                             </Nav.Link>
                         ))}
                     </Nav>
                 </Navbar.Collapse>
             </Container>
+
+            <a
+                id="mlh-trust-badge"
+                href="https://mlh.io/seasons/2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=black"
+                target="_blank"
+                rel="noreferrer noopener"
+            >
+                <img
+                    src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-black.svg"
+                    alt="Major League Hacking 2021 Hackathon Season"
+                    width="100%"
+                />
+            </a>
         </Navbar>
     );
 };

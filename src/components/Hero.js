@@ -1,34 +1,52 @@
 import React from 'react';
 import { Container, Button } from 'react-bootstrap';
 import styled from 'styled-components';
+import { Fade, Slide } from 'react-reveal';
 
-import { ReactComponent as Building } from '../assets/building-hero.svg';
-import { ReactComponent as Train } from '../assets/train.svg';
-import { ReactComponent as Trees } from '../assets/trees.svg';
+import BuildingBR from '../assets/svg/building-hero-br.svg';
+import BuildingBL from '../assets/svg/building-hero-bl.svg';
+import BuildingTL from '../assets/svg/building-hero-tl.svg';
+import BuildingTR from '../assets/svg/building-hero-tr.svg';
+import Logo from '../assets/svg/hero-logo.svg';
+import { Parallax } from 'react-scroll-parallax';
 
 const Hero = () => {
     return (
         <HeroWrapper>
-            <Container className="mb-5">
-                <h1>
-                    <span>SD</span>
-                    <br />
-                    hacks
-                </h1>
-                <h2>February 19-21, 2021</h2>
-                <h3 className="mb-4">Completely Virtual</h3>
-                <Button
-                    size="lg"
-                    href="https://www.tesc.events/register/sdhacks2021"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Apply Now
-                </Button>
+            <Container>
+                <Fade>
+                    <img src={Logo} alt="logo" className="hero-logo" />
+                    <div className="cta">
+                        <h1 className="mb-4">
+                            Completely
+                            <br />
+                            Virtual
+                        </h1>
+                        <Button
+                            size="lg"
+                            href="https://www.tesc.events/register/sdhacks2021"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Apply Now
+                        </Button>
+                    </div>
+                </Fade>
             </Container>
-            <Building className="building-img" />
-            <Train className="train-img" />
-            <Trees className="trees-img" />
+
+            <Parallax className="building-TR" y={[100, 0]}>
+                <img src={BuildingTR} alt="" />
+            </Parallax>
+            <Slide right>
+                <img src={BuildingBR} alt="" className="building-BR" />
+            </Slide>
+
+            <Parallax className="building-BL" y={[0, 50]}>
+                <img src={BuildingBL} alt="" />
+            </Parallax>
+            <Slide left>
+                <img src={BuildingTL} className="building-TL" alt="" />
+            </Slide>
         </HeroWrapper>
     );
 };
@@ -37,53 +55,101 @@ const HeroWrapper = styled.section`
     height: 85vh;
     min-height: 800px;
     background-color: var(--orange-light);
-    display: flex;
-    align-items: center;
     position: relative;
 
     .container {
-        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
     }
 
-    h1 {
-        font-weight: 900;
-        font-size: clamp(5rem, 30vw, 11rem);
-        line-height: 0.6em;
+    .hero-logo {
+        width: 40%;
 
-        span {
-            color: var(--orange);
-            position: relative;
-            left: 0.3em;
+        @media (max-width: 576px) {
+            width: 70%;
         }
     }
 
-    h2 {
-        font-weight: 700;
-        font-size: clamp(1.5rem, 7vw, 3.75rem);
-        color: var(--orange);
+    .cta {
+        z-index: 1;
+        text-align: center;
+        margin-top: 1rem;
+
+        h1 {
+            font-weight: 800;
+            font-size: clamp(2rem, 15vw, 5rem);
+        }
     }
 
-    .building-img {
+    .building-BR {
         position: absolute;
-        top: 0;
+        bottom: -25%;
         right: 0;
-        width: 30%;
+        width: 20%;
+        z-index: 1;
 
         @media (max-width: 576px) {
             display: none;
         }
     }
 
-    .train-img {
+    .building-BL {
         position: absolute;
-        bottom: -2px;
-        left: -5px;
+        bottom: -5%;
+        left: 10%;
+        z-index: 1;
+        animation: float 5s ease 2s infinite;
+
+        img {
+            width: 25vw;
+        }
+
+        @media (max-width: 576px) {
+            display: none;
+        }
     }
 
-    .trees-img {
+    .building-TR {
         position: absolute;
-        bottom: -55px;
-        right: 0;
+        top: 6%;
+        right: 7%;
+        animation: float 5s infinite;
+
+        img {
+            width: 20vw;
+        }
+
+        @media (max-width: 576px) {
+            display: none;
+        }
+    }
+
+    .building-TL {
+        position: absolute;
+        top: 0%;
+        left: -3.5%;
+        width: 15%;
+
+        @media (max-width: 576px) {
+            display: none;
+        }
+    }
+
+    @keyframes float {
+        from {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(20px);
+        }
+
+        to {
+            transform: translateY(0);
+        }
     }
 `;
 

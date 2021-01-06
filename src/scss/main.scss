@@ -2,8 +2,43 @@
 @import 'variables';
 @import 'font';
 
-@include media-breakpoint-down(sm) {
-    #mlh-trust-badge {
-        left: 20px;
+#mlh-trust-badge {
+    display: block;
+    max-width: 100px;
+    min-width: 60px;
+    position: fixed;
+    right: 50px;
+    top: 0;
+    width: 10%;
+    z-index: 10000;
+
+    @include media-breakpoint-down(md) {
+        left: 30px;
+    }
+}
+
+img {
+    -webkit-user-drag: none;
+}
+
+// overriding Bootstrap modal style for Tracks section
+// some properties overriden in _variables.scss
+.fade.modal {
+    display: flex !important ;
+    align-items: center;
+
+    .modal-header {
+        padding: 3rem;
+        padding-bottom: 0;
+
+        .modal-title {
+            font-size: 3rem;
+            font-weight: 900;
+        }
+    }
+
+    .modal-body {
+        padding-top: 1rem;
+        font-size: 18px;
     }
 }
