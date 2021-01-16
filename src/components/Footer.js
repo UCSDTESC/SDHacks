@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import 'styled-components/macro';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
 
 import BuildingBottom from '../assets/svg/building-footer-b.svg';

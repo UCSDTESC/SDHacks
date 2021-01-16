@@ -27,8 +27,18 @@ const Hero = () => {
                             href="https://www.tesc.events/register/sdhacks2021"
                             target="_blank"
                             rel="noopener noreferrer"
+                            className="mt-3"
                         >
-                            Apply Now
+                            Hacker App
+                        </Button>
+                        <Button
+                            size="lg"
+                            href="https://forms.gle/ReRfdE5Tg9K3WN679"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="mt-3 ml-sm-4"
+                        >
+                            Mentor App
                         </Button>
                     </div>
                 </Fade>
