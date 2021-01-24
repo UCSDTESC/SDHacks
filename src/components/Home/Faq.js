@@ -3,12 +3,12 @@ import { Container, Row, Col } from 'react-bootstrap';
 import styled from 'styled-components';
 import Slide from 'react-reveal/Slide';
 import { Parallax } from 'react-scroll-parallax';
-import FaqData from '../data/SDHacksFAQ';
+import FaqData from '../../data/SDHacksFAQ';
 
-import TrainTop from '../assets/svg/train-2.svg';
-import Bridge from '../assets/svg/bridge.svg';
-import Landscape from '../assets/svg/landscape.svg';
-import TrainBottom from '../assets/svg/train-3.svg';
+import TrainTop from '../../assets/svg/train-2.svg';
+import Bridge from '../../assets/svg/bridge.svg';
+import Landscape from '../../assets/svg/landscape.svg';
+import TrainBottom from '../../assets/svg/train-3.svg';
 
 const Faq = () => {
     return (

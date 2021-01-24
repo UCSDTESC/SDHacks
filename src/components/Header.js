@@ -1,15 +1,13 @@
 import React, { useEffect, useMemo } from 'react';
+import PropTypes from 'prop-types';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import 'styled-components/macro';
 import $ from 'jquery';
 
 import Logo from '../assets/logo-header.png';
 
-const Header = () => {
-    const navLinks = useMemo(
-        () => ['about', 'tracks', 'faq', 'sponsors', 'contact'],
-        []
-    );
+const Header = ({ navItems }) => {
+    const navLinks = useMemo(() => navItems, [navItems]);
 
     useEffect(() => {
         navLinks.forEach((name) => {
@@ -84,6 +82,10 @@ const Header = () => {
             </a>
         </Navbar>
     );
+};
+
+Header.propTypes = {
+    navItems: PropTypes.array,
 };
 
 export default Header;

@@ -4,8 +4,8 @@ import styled from 'styled-components';
 import { Fade, Slide } from 'react-reveal';
 import withReveal from 'react-reveal/withReveal';
 
-import Train from '../assets/svg/train-1.svg';
-import { ReactComponent as Trees } from '../assets/svg/trees.svg';
+import Train from '../../assets/svg/train-1.svg';
+import { ReactComponent as Trees } from '../../assets/svg/trees.svg';
 
 const About = () => {
     return (

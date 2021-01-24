@@ -1,15 +1,17 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import SDHacksLayout from './components/Layout';
-import SDHacksPage from './App';
+import SDHacksLayout from './layouts/AppLayout';
+import FellowshipLayout from './layouts/FellowshipLayout';
+import SDHacksPage from './pages/App';
+import FellowshipPage from './pages/Fellowship';
 
 class Routes extends React.Component {
-    withLayout(Children) {
+    withLayout(Layout, Children) {
         return () => (
-            <SDHacksLayout>
+            <Layout>
                 <Children />
-            </SDHacksLayout>
+            </Layout>
         );
     }
 
@@ -18,8 +20,16 @@ class Routes extends React.Component {
             <Switch>
                 <Route
                     path="/"
+                    component={this.withLayout(SDHacksLayout, SDHacksPage)}
                     exact
-                    component={this.withLayout(SDHacksPage)}
+                />
+                <Route
+                    path="/fellowship"
+                    component={this.withLayout(
+                        FellowshipLayout,
+                        FellowshipPage
+                    )}
+                    exact
                 />
             </Switch>
         );

@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { Container, Row, Col, Modal } from 'react-bootstrap';
 import styled from 'styled-components';
 
-import { ReactComponent as Learning } from '../assets/icons/learning.svg';
-import { ReactComponent as Sustainability } from '../assets/icons/sustainability.svg';
-import { ReactComponent as Urban } from '../assets/icons/urban.svg';
-import { ReactComponent as Civic } from '../assets/icons/civic.svg';
+import { ReactComponent as Learning } from '../../assets/icons/learning.svg';
+import { ReactComponent as Sustainability } from '../../assets/icons/sustainability.svg';
+import { ReactComponent as Urban } from '../../assets/icons/urban.svg';
+import { ReactComponent as Civic } from '../../assets/icons/civic.svg';
 
-import Building from '../assets/svg/building-jacobs.svg';
+import Building from '../../assets/svg/building-jacobs.svg';
 
 const Tracks = () => {
     const [showTrack, setShowTrack] = useState(false);

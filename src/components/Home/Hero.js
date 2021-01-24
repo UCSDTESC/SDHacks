@@ -3,11 +3,11 @@ import { Container, Button } from 'react-bootstrap';
 import styled from 'styled-components';
 import { Fade, Slide } from 'react-reveal';
 
-import BuildingBR from '../assets/svg/building-hero-br.svg';
-import BuildingBL from '../assets/svg/building-hero-bl.svg';
-import BuildingTL from '../assets/svg/building-hero-tl.svg';
-import BuildingTR from '../assets/svg/building-hero-tr.svg';
-import Logo from '../assets/svg/hero-logo.svg';
+import BuildingBR from '../../assets/svg/building-hero-br.svg';
+import BuildingBL from '../../assets/svg/building-hero-bl.svg';
+import BuildingTL from '../../assets/svg/building-hero-tl.svg';
+import BuildingTR from '../../assets/svg/building-hero-tr.svg';
+import Logo from '../../assets/svg/hero-logo.svg';
 import { Parallax } from 'react-scroll-parallax';
 
 const Hero = () => {

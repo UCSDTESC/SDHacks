@@ -3,8 +3,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 import styled from 'styled-components';
 import 'styled-components/macro';
 
-import teamData from '../data/teamData';
-import Building from '../assets/svg/building-footer-tl.svg';
+import teamData from '../../data/teamData';
+import Building from '../../assets/svg/building-footer-tl.svg';
 
 const Team = () => {
     return (
