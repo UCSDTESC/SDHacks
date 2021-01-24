@@ -2,7 +2,7 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 
 const FellowshipPage = () => {
-    return <div>welcome to fellowship page</div>;
+    return <>welcome to fellowship page</>;
 };
 
 export default withRouter(FellowshipPage);
