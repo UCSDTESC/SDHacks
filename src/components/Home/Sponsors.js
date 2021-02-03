@@ -3,16 +3,21 @@ import { Container } from 'react-bootstrap';
 import styled from 'styled-components';
 import 'styled-components/macro';
 
-import niwc from '../../assets/sponsors/niwc.svg';
+import notion from '../../assets/sponsors/notion.png';
 import northrop from '../../assets/sponsors/northrop.svg';
-import activbody from '../../assets/sponsors/activbody.svg';
-import cse from '../../assets/sponsors/jsoe-cse.svg';
+import WS from '../../assets/sponsors/WilsonSonsini.png';
+import kuzo from '../../assets/sponsors/KuzoClass.png';
+import fb from '../../assets/sponsors/Facebook.png';
+import echoar from '../../assets/sponsors/echoAR.png';
+import datastax from '../../assets/sponsors/DataStax.png';
+import ofos from '../../assets/sponsors/1517.png';
+import gc from '../../assets/sponsors/GoogleCloud.png';
 import aws from '../../assets/sponsors/aws.svg';
-import surcle from '../../assets/sponsors/surcle.svg';
-import costar from '../../assets/sponsors/costar.svg';
-import microsoft from '../../assets/sponsors/microsoft.svg';
 import wolfram from '../../assets/sponsors/wolfram.svg';
 import sm from '../../assets/sponsors/sticker-mule.svg';
+import cse from '../../assets/sponsors/jsoe-cse.svg';
+import basement from '../../assets/sponsors/Basement.jpg';
+import pear from '../../assets/sponsors/PearVC.png';
 
 import acm from '../../assets/partners/acm.png';
 import wic from '../../assets/partners/wic.png';
@@ -24,7 +29,6 @@ import swe from '../../assets/partners/swe.png';
 import os from '../../assets/partners/OpenSource.png';
 import tbp from '../../assets/partners/tbp.png';
 import tlg from '../../assets/partners/tlg.png';
-import hkn from '../../assets/partners/hkn.png';
 
 function Sponsor(props) {
     const col = props.col || 'col-md-4 col-lg-4';
@@ -64,8 +68,6 @@ const Sponsors = () => {
             <Container>
                 <SectionContent>
                     <SectionHeader>
-                        last year's
-                        <br />
                         <span
                             css={`
                                 color: var(--cyan);
@@ -131,31 +133,18 @@ const SponsorContent = styled(SectionContent)`
 
 const tierOneSponsor = [
     {
-        name: 'Naval Information Warfare Center - Pacific',
-        logo: niwc,
-        link:
-            'https://www.public.navy.mil/navwar/NIWC-Pacific/Pages/default.aspx',
-        width: '50',
-    },
-].map((x) => ({ ...x, tier: 0 }));
-
-const tierTwoSponsor = [
-    {
         name: 'Northrop Grumman',
         logo: northrop,
         link: 'https://www.northropgrumman.com/Pages/default.aspx',
         width: '100',
     },
+].map((x) => ({ ...x, tier: 0 }));
+
+const tierTwoSponsor = [
     {
-        name: 'Activbody',
-        logo: activbody,
-        link: 'https://activbody.com/',
-        size: '100',
-    },
-    {
-        name: 'UCSD CSE',
-        logo: cse,
-        link: 'https://cse.ucsd.edu/',
+        name: '1517',
+        logo: ofos,
+        link: 'https://www.1517fund.com/',
         size: '100',
     },
     {
@@ -165,21 +154,70 @@ const tierTwoSponsor = [
         width: '60',
     },
     {
-        name: 'Surcle',
-        logo: surcle,
-        link: 'https://surcle.io',
+        name: 'Basement - UCSD',
+        logo: basement,
+        link: 'https://www.ucsdbasement.com/',
+        size: '100',
+    },
+    {
+        name: 'UCSD CSE',
+        logo: cse,
+        link: 'https://cse.ucsd.edu/',
+        size: '100',
+    },
+    {
+        name: 'DataStax',
+        logo: datastax,
+        link: 'https://www.datastax.com/',
+        size: '100',
+    },
+    {
+        name: 'echoAR',
+        logo: echoar,
+        link:
+            'https://www.echoar.xyz/?gclid=Cj0KCQiAmL-ABhDFARIsAKywVaeWJMRPefyrDjU0z2apexRWkVvPVJU9rFZjWPjlyBBjMYzLLVTqke4aAhAAEALw_wcB',
+        width: '80',
+    },
+    {
+        name: 'Facebook',
+        logo: fb,
+        link: 'https://about.fb.com/',
         width: '90',
     },
     {
-        name: 'Costar',
-        logo: costar,
-        link: 'https://www.costar.com/',
+        name: 'Google Cloud',
+        logo: gc,
+        link: 'https://cloud.google.com/',
         width: '90',
     },
     {
-        name: 'Microsoft',
-        logo: microsoft,
-        link: 'https://www.microsoft.com/en-us/',
+        name: 'KuzoClass',
+        logo: kuzo,
+        link: 'https://kuzoclass.com/',
+        width: '90',
+    },
+    {
+        name: 'Notion',
+        logo: notion,
+        link: 'https://www.notion.so/product',
+        width: '50',
+    },
+    {
+        name: 'Pear Venture Capital',
+        logo: pear,
+        link: 'https://www.pear.vc/',
+        width: '60',
+    },
+    {
+        name: 'Stickermule',
+        logo: sm,
+        link: 'http://hackp.ac/mlh-stickermule-hackathons',
+        width: '100',
+    },
+    {
+        name: 'Wilson Sonsini',
+        logo: WS,
+        link: 'https://www.wsgr.com/en/',
         width: '80',
     },
     {
@@ -188,25 +226,14 @@ const tierTwoSponsor = [
         link: 'https://www.wolfram.com/',
         width: '80',
     },
-    {
-        name: 'Stickermule',
-        logo: sm,
-        link: 'http://hackp.ac/mlh-stickermule-hackathons',
-        width: '80',
-    },
+
 ].map((x) => ({ ...x, tier: 1 }));
 
 const tierOnePartner = [
     {
         name: 'ACM',
         logo: acm,
-        link: 'http://www.acm.org/',
-        width: '80',
-    },
-    {
-        name: 'WIC',
-        logo: wic,
-        link: 'https://wic.ucsd.edu/',
+        link: 'https://acmucsd.com/',
         width: '80',
     },
     {
@@ -234,15 +261,15 @@ const tierOnePartner = [
         width: '100',
     },
     {
-        name: 'SWE',
-        logo: swe,
-        link: 'http://swe.ucsd.edu/',
-        width: '100',
-    },
-    {
         name: 'Open Source',
         logo: os,
         link: 'https://os-ucsd.ucsd.edu/',
+        width: '100',
+    },
+    {
+        name: 'SWE',
+        logo: swe,
+        link: 'http://swe.ucsd.edu/',
         width: '100',
     },
     {
@@ -258,10 +285,10 @@ const tierOnePartner = [
         width: '80',
     },
     {
-        name: 'HKN',
-        logo: hkn,
-        link: 'https://hkn.ucsd.edu/',
-        width: '100',
+        name: 'WIC',
+        logo: wic,
+        link: 'https://wic.ucsd.edu/',
+        width: '80',
     },
 ].map((x) => ({ ...x, tier: 3 }));
 
