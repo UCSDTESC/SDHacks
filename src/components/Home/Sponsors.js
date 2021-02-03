@@ -18,6 +18,7 @@ import sm from '../../assets/sponsors/sticker-mule.svg';
 import cse from '../../assets/sponsors/jsoe-cse.svg';
 import basement from '../../assets/sponsors/Basement.jpg';
 import pear from '../../assets/sponsors/PearVC.png';
+import sdsc from '../../assets/sponsors/SDSC.jpg';
 
 import acm from '../../assets/partners/acm.png';
 import wic from '../../assets/partners/wic.png';
@@ -212,6 +213,12 @@ const tierTwoSponsor = [
         name: 'Stickermule',
         logo: sm,
         link: 'http://hackp.ac/mlh-stickermule-hackathons',
+        width: '100',
+    },
+    {
+        name: 'San Diego Supercomputer Center',
+        logo: sdsc,
+        link: 'https://www.sdsc.edu/',
         width: '100',
     },
     {
