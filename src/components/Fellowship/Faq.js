@@ -5,7 +5,7 @@ import 'styled-components/macro';
 
 const Faq = () => {
     return (
-        <FaqContainer>
+        <FaqContainer className="faq">
             <Container>
                 <h1
                     style={{
@@ -81,7 +81,7 @@ const FaqData = [
     },
 ];
 
-const FaqContainer = styled.div`
+const FaqContainer = styled.section`
     background-color: var(--orange-light);
     color: var(--dark);
     padding: 5% 0;

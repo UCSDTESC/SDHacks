@@ -4,21 +4,21 @@ import styled from 'styled-components';
 import 'styled-components/macro';
 const About = () => {
     return (
-        <AboutContainer>
+        <AboutContainer className="about">
             <Container>
                 <h1
-                    style={{
-                        fontWeight: '800',
-                        fontSize: 'clamp(2rem, 15vw, 5rem)',
-                    }}
+                    css={`
+                        font-weight: 800;
+                        font-size: clamp(2rem, 15vw, 5rem);
+                    `}
                 >
                     About
                 </h1>
                 <div
-                    style={{
-                        fontWeight: '150',
-                        fontSize: '30px',
-                    }}
+                    css={`
+                        font-weight: 150;
+                        font-size: 30px;
+                    `}
                 >
                     <p>
                         SD Hacks is where the best student hackers gather and
@@ -44,7 +44,7 @@ const About = () => {
     );
 };
 
-const AboutContainer = styled.div`
+const AboutContainer = styled.section`
     background-color: var(--orange-light);
     color: var(--dark);
     padding: 5% 0;

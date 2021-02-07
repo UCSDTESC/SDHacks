@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import 'styled-components/macro';
 const provide = () => {
     return (
-        <ProvideContainer>
+        <ProvideContainer className="benefits">
             <Container>
                 <h1
                     style={{
