@@ -3,21 +3,14 @@ import { Container } from 'react-bootstrap';
 import styled from 'styled-components';
 import 'styled-components/macro';
 
-import notion from '../../assets/sponsors/notion.png';
 import northrop from '../../assets/sponsors/northrop.svg';
-import WS from '../../assets/sponsors/WilsonSonsini.png';
 import kuzo from '../../assets/sponsors/KuzoClass.png';
 import fb from '../../assets/sponsors/Facebook.png';
 import echoar from '../../assets/sponsors/echoAR.png';
 import datastax from '../../assets/sponsors/DataStax.png';
-import ofos from '../../assets/sponsors/1517.png';
-import gc from '../../assets/sponsors/GoogleCloud.png';
-import aws from '../../assets/sponsors/aws.svg';
 import wolfram from '../../assets/sponsors/wolfram.svg';
 import sm from '../../assets/sponsors/sticker-mule.svg';
 import cse from '../../assets/sponsors/jsoe-cse.svg';
-import basement from '../../assets/sponsors/Basement.jpg';
-import pear from '../../assets/sponsors/PearVC.png';
 import sdsc from '../../assets/sponsors/SDSC.jpg';
 
 import acm from '../../assets/partners/acm.png';
@@ -143,24 +136,6 @@ const tierOneSponsor = [
 
 const tierTwoSponsor = [
     {
-        name: '1517',
-        logo: ofos,
-        link: 'https://www.1517fund.com/',
-        size: '100',
-    },
-    {
-        name: 'Amazon Web Services',
-        logo: aws,
-        link: 'https://aws.amazon.com/',
-        width: '60',
-    },
-    {
-        name: 'Basement - UCSD',
-        logo: basement,
-        link: 'https://www.ucsdbasement.com/',
-        size: '100',
-    },
-    {
         name: 'UCSD CSE',
         logo: cse,
         link: 'https://cse.ucsd.edu/',
@@ -186,28 +161,10 @@ const tierTwoSponsor = [
         width: '90',
     },
     {
-        name: 'Google Cloud',
-        logo: gc,
-        link: 'https://cloud.google.com/',
-        width: '90',
-    },
-    {
         name: 'KuzoClass',
         logo: kuzo,
         link: 'https://kuzoclass.com/',
         width: '90',
-    },
-    {
-        name: 'Notion',
-        logo: notion,
-        link: 'https://www.notion.so/product',
-        width: '50',
-    },
-    {
-        name: 'Pear Venture Capital',
-        logo: pear,
-        link: 'https://www.pear.vc/',
-        width: '60',
     },
     {
         name: 'Stickermule',
@@ -220,12 +177,6 @@ const tierTwoSponsor = [
         logo: sdsc,
         link: 'https://www.sdsc.edu/',
         width: '100',
-    },
-    {
-        name: 'Wilson Sonsini',
-        logo: WS,
-        link: 'https://www.wsgr.com/en/',
-        width: '80',
     },
     {
         name: 'Wolfram',
