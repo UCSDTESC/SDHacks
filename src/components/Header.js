@@ -64,6 +64,9 @@ const Header = ({ navItems }) => {
                                 {name}
                             </Nav.Link>
                         ))}
+                        <Nav.Link href={`fellowship`}>
+                            {`fellowship`}
+                        </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
