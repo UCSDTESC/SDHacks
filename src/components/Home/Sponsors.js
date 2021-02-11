@@ -67,7 +67,7 @@ const Sponsors = () => {
                                 color: var(--cyan);
                             `}
                         >
-                            SPONSORS
+                            SPONSORS & PARTNERS
                         </span>
                     </SectionHeader>
                     <SponsorContent>
@@ -184,7 +184,6 @@ const tierTwoSponsor = [
         link: 'https://www.wolfram.com/',
         width: '80',
     },
-
 ].map((x) => ({ ...x, tier: 1 }));
 
 const tierOnePartner = [
