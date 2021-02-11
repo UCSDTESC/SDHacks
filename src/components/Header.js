@@ -53,7 +53,7 @@ const Header = ({ navItems }) => {
             `}
         >
             <Container>
-                <Navbar.Brand href="#home" className="mx-auto mr-md-auto">
+                <Navbar.Brand href="/" className="mx-auto mr-md-auto">
                     <img src={Logo} alt="logo" height="40" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbar-nav" />
@@ -64,6 +64,9 @@ const Header = ({ navItems }) => {
                                 {name}
                             </Nav.Link>
                         ))}
+                        <Nav.Link href={`fellowship`}>
+                            {`fellowship`}
+                        </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
