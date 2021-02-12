@@ -79,7 +79,7 @@ const Schedule = () => {
 
 const ScheduleContainer = styled.section `
     background-color: var(--orange-light);
-    height: 100vh;
+    padding-bottom: 15rem;
 `;
 
 export default Schedule;
