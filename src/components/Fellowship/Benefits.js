@@ -36,7 +36,7 @@ const provideInfo = [
     {
         title: 'Entrepreneurship Curriculum',
         info:
-            'We host weekly workshops and speaker events to help founders learn to scale. Workshop topics include product, users, marketing, pitching, and more.',
+            'We host weekly workshops and speaker events to help founders learn to scale. Workshop topics include product, users, marketing, pitching, and more. Confirmed guests include Elad Gil (investor), Cory Levy (First Text), Kojin Oshiba (Robust Intelligence), Soham More (Sympto Health), Scott Klemmer (UCSD Design Lab), Andy White (Keshif Ventures), and more.',
     },
     {
         title: 'Mentorship',

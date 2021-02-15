@@ -4,8 +4,8 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 import 'styled-components/macro';
 import $ from 'jquery';
 
-import Logo from '../assets/logo-header.png';
-import pinnacle from '../assets/partners/pinnacle.png';
+import Logo from '../../assets/logo-header.png';
+import pinnacle from '../../assets/partners/pinnacle.png';
 
 const Header = ({ navItems }) => {
     const navLinks = useMemo(() => navItems, [navItems]);
@@ -65,6 +65,9 @@ const Header = ({ navItems }) => {
                                 {name}
                             </Nav.Link>
                         ))}
+                        <Nav.Link href={`fellowship`}>
+                            {`fellowship`}
+                        </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

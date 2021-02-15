@@ -34,7 +34,7 @@ function Sponsor(props) {
 
 function renderSponsors(currSponsors) {
     const COL_LENS = [
-        'col-md-9 col-lg-9',
+        'col-md-6 col-lg-6',
         'col-md-4 col-lg-4',
         'col-md-3 col-md-3',
         'col-md-2 col-md-2',
@@ -107,15 +107,15 @@ const tierOneSponsor = [
         link: 'https://www.1517fund.com/',
         size: '60',
     },
-].map((x) => ({ ...x, tier: 0 }));
-
-const tierTwoSponsor = [
     {
         name: 'Wilson Sonsini',
         logo: WS,
         link: 'https://www.wsgr.com/en/',
         width: '80',
     },
+].map((x) => ({ ...x, tier: 0 }));
+
+const tierTwoSponsor = [
     {
         name: 'Pear Venture Capital',
         logo: pear,

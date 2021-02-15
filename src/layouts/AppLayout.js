@@ -1,7 +1,7 @@
 import React from 'react';
 import { ParallaxProvider } from 'react-scroll-parallax';
 
-import Header from '../components/Header';
+import Header from '../components/Home/Header';
 import Footer from '../components/Footer';
 
 const Layout = ({ children }) => {
