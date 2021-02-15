@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import styled from 'styled-components';
 
 import HeroImg from '../../assets/svg/building-hero-bl.svg';
@@ -15,7 +15,15 @@ const Hero = () => {
                             <br />
                             Fellowship
                         </h1>
-                        <p>Application Coming Soon</p>
+                        <Button
+                            size="lg"
+                            href="https://docs.google.com/forms/d/e/1FAIpQLScyXFysR1TbLTtvJuN583BfGo97LCWUX6vyXyUBlE6meTeVQQ/viewform?usp=sf_link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="mt-3"
+                        >
+                            Apply Now
+                        </Button>
                     </Col>
                     <Col>
                         <img src={HeroImg} alt="" width="80%" />
