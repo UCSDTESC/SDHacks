@@ -12,6 +12,8 @@ import wolfram from '../../assets/sponsors/wolfram.svg';
 import sm from '../../assets/sponsors/sticker-mule.svg';
 import cse from '../../assets/sponsors/jsoe-cse.svg';
 import sdsc from '../../assets/sponsors/SDSC.jpg';
+import gc from '../../assets/sponsors/GoogleCloud.png';
+import aws from '../../assets/sponsors/aws.png';
 
 import acm from '../../assets/partners/acm.png';
 import wic from '../../assets/partners/wic.png';
@@ -67,7 +69,7 @@ const Sponsors = () => {
                                 color: var(--cyan);
                             `}
                         >
-                            SPONSORS & PARTNERS
+                            SPONSORS
                         </span>
                     </SectionHeader>
                     <SponsorContent>
@@ -136,6 +138,12 @@ const tierOneSponsor = [
 
 const tierTwoSponsor = [
     {
+        name: 'Amazon Web Services',
+        logo: aws,
+        link: 'https://aws.amazon.com/',
+        width: '60',
+    },
+    {
         name: 'UCSD CSE',
         logo: cse,
         link: 'https://cse.ucsd.edu/',
@@ -158,6 +166,12 @@ const tierTwoSponsor = [
         name: 'Facebook',
         logo: fb,
         link: 'https://about.fb.com/',
+        width: '90',
+    },
+    {
+        name: 'Google Cloud',
+        logo: gc,
+        link: 'https://cloud.google.com/',
         width: '90',
     },
     {

@@ -7,7 +7,7 @@ import notion from '../../assets/sponsors/notion.png';
 import WS from '../../assets/sponsors/WilsonSonsini.png';
 import ofos from '../../assets/sponsors/1517.png';
 import gc from '../../assets/sponsors/GoogleCloud.png';
-import aws from '../../assets/sponsors/aws.svg';
+import aws from '../../assets/sponsors/aws.png';
 import basement from '../../assets/sponsors/Basement.jpg';
 import pear from '../../assets/sponsors/PearVC.png';
 import stripe from '../../assets/sponsors/stripe.png';
