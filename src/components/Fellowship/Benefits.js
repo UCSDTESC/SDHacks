@@ -51,7 +51,7 @@ const provideInfo = [
     {
         title: 'Resources',
         info:
-            'AWS, Google Cloud, Stripe, and Notion credits. Co-working space and hardware facility at The Basement on UCSD campus. (Subject to change for 2021.)',
+            'AWS, Google Cloud, Stripe, and Notion credits. (No on-campus co-working space will be provided for the 20/21 academic year.)',
     },
     {
         title: 'Demo Day',
