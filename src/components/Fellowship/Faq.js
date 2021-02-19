@@ -45,7 +45,7 @@ const FaqData = [
     {
         question: "Who's the Fellowship for?",
         answer:
-            "SD Hacks Fellowship serves those interested in continuing their SD Hacks projects as something bigger - either startups, non-profits, or impactful side-projects. (But you don't have to strictly stick with your idea from SD Hacks.)",
+            "SD Hacks Fellowship serves those interested in continuing their SD Hacks projects as something bigger - either startups, non-profits, or impactful side-projects. We also welcome those who want to build beyond their tech-projects outside SD Hacks into startups.",
     },
     {
         question: "Is the program virtual or in-person?",
@@ -55,33 +55,33 @@ const FaqData = [
     {
         question: "What's the application process like?",
         answer:
-            'One written application and one 30 mins interview. Application opens on February 15th, 2021, and closes on February 26th, 2021.',
+            "One written application and one 30 mins interview. Application opens on February 15th, 2021, and closes on February 26th, 2021.",
     },
     {
         question: "Who's eligible to apply?",
         answer:
-            'An applicant needs to be a team of 2 - 4 UCSD students. At least one of the team members needs to be a participant in SD Hacks 2021. Both undergrad and grad students are welcome.',
+            "An applicant needs to be a team of 2 - 4 UCSD students. You don’t have to be a participant in SD Hacks 2021. Both undergrad and grad students are welcome.",
     },
     {
-        question: 'What do you look for in the applicants?',
+        question: "What do you look for in the applicants?",
         answer:
             "Make sure you really know the problem you're going to tackle as well as the technical skillsets that you'll need. We like applicants who truly care about the problem of their focus and who are confident in their technical abilities.",    },
     {
-        question: 'Do I need previous startup experience?',
-        answer: 'No.',
+        question: "Do I need previous startup experience?",
+        answer: "No.",
     },
     {
-        question: 'How many Fellows do you select?',
-        answer: '10 - 20 students for SD Hacks Fellowship 2021.',
+        question: "How many Fellows do you select?",
+        answer: "10 - 20 students for SD Hacks Fellowship 2021.",
     },
     {
-        question: 'What is the expected time commitment?',
+        question: "What is the expected time commitment?",
         answer:
             "8+ hrs/week. You're going to attend 1 or 2 workshops and/or speaker events every week. SD Hacks 2021 will kick off on March 8th and end on May 21st.",
     },
     {
-        question: 'Do you take equity?',
-        answer: 'No. Our only interest is you.',
+        question: "Do you take equity?",
+        answer: "No. Our only interest is you.",
     },
 ];
 
