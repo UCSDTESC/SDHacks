@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import 'styled-components/macro';
 import { Container } from 'react-bootstrap';
-import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin, FaYoutube } from 'react-icons/fa';
 
 import BuildingBottom from '../assets/svg/building-footer-b.svg';
 import BuildingRight from '../assets/svg/building-footer-r.svg';
@@ -74,6 +74,13 @@ const Footer = () => {
                         rel="noreferrer noopener"
                     >
                         <FaLinkedin />
+                    </a>
+                    <a
+                        href="https://www.youtube.com/channel/UC2gbRQB_ScHK63q57rOQtmw"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                    >
+                        <FaYoutube />
                     </a>
                 </div>
 
