@@ -30,11 +30,11 @@ const About = () => {
                                 Diego.
                             </Description>
                             <Description>
-                                SD Hacks 2021 will provide the support and
+                                SD Hacks 2022 will provide the support and
                                 mentorship necessary to develop innovative
                                 software projects. With mentorship coming from a
                                 variety of engineering disciplines and
-                                companies, SD Hacks 2021 is shaping up to become
+                                companies, SD Hacks 2022 is shaping up to become
                                 an unforgettable 36 hours of collaboration,
                                 empowerment, and innovation. This year, SD Hacks
                                 will be going completely virtual and bringing
