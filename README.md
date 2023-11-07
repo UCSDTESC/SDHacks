@@ -1,5 +1,5 @@
-# SDHacks2021
-Official website of SDHacks 2021
+# SDHacks2023
+Official website of SDHacks 2023
 
 ## How to Contribute
 
