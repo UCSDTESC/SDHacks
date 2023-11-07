@@ -9,6 +9,7 @@
   "dependencies": {
     "airtable": "^0.10.0",
     "bootstrap": "^4.5.3",
+    "express": "^4.18.2",
     "jquery": "^3.5.1",
     "moment": "^2.24.0",
     "react": "^16.8.6",
@@ -20,6 +21,7 @@
     "react-router-dom": "^5.0.1",
     "react-scripts": "^3.4.4",
     "react-scroll-parallax": "^2.3.5",
+    "serve": "^14.2.1",
     "styled-components": "^4.4.1"
   },
   "scripts": {
