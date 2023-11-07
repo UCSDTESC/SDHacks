@@ -15,8 +15,8 @@ const Footer = () => {
                     have any questions?
                     <br />
                     talk to us at{' '}
-                    <a href="mailto:sdhacks@tesc.ucsd.edu">
-                        sdhacks@tesc.ucsd.edu
+                    <a href="mailto:tesc@tesc.ucsd.edu">
+                        tesc@tesc.ucsd.edu
                     </a>
                 </p>
                 <div className="logo-wrapper">

@@ -18,9 +18,9 @@ const Hero = () => {
                     <img src={Logo} alt="logo" className="hero-logo" />
                     <div className="cta">
                         <h1 className="mb-4">
-                            Completely
+                            Price Center
                             <br />
-                            Virtual
+                            East Ballroom
                         </h1>
                         <Button
                             size="lg"

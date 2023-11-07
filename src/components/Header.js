@@ -5,7 +5,6 @@ import 'styled-components/macro';
 import $ from 'jquery';
 
 import Logo from '../assets/logo-header.png';
-import pinnacle from '../assets/partners/pinnacle.png';
 
 const Header = ({ navItems }) => {
     const navLinks = useMemo(() => navItems, [navItems]);
@@ -68,32 +67,6 @@ const Header = ({ navItems }) => {
                     </Nav>
                 </Navbar.Collapse>
             </Container>
-
-            <a
-                id="mlh-trust-badge"
-                href="https://mlh.io/seasons/2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=black"
-                target="_blank"
-                rel="noreferrer noopener"
-            >
-                <img
-                    src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-black.svg"
-                    alt="Major League Hacking 2021 Hackathon Season"
-                    width="100%"
-                />
-            </a>
-
-            <a
-                id="pinnacle-trust-badge"
-                href="https://pinnacle.us.org/"
-                target="_blank"
-                rel="noreferrer noopener"
-            >
-                <img
-                    src={pinnacle}
-                    alt="Pinnacle 2021"
-                    width="100%"
-                />
-            </a>
         </Navbar>
     );
 };

@@ -30,15 +30,14 @@ const About = () => {
                                 Diego.
                             </Description>
                             <Description>
-                                SD Hacks 2022 will provide the support and
+                                SD Hacks 2023 will provide the support and
                                 mentorship necessary to develop innovative
                                 software projects. With mentorship coming from a
                                 variety of engineering disciplines and
-                                companies, SD Hacks 2022 is shaping up to become
-                                an unforgettable 36 hours of collaboration,
+                                companies, SD Hacks 2023 is shaping up to become
+                                an unforgettable 24 hours of collaboration,
                                 empowerment, and innovation. This year, SD Hacks
-                                will be going completely virtual and bringing
-                                the hackathon to you.
+                                will be held in the Price Center East Ballroom.
                             </Description>
                         </Fade>
                     </Col>
