@@ -2,35 +2,6 @@
 @import 'variables';
 @import 'font';
 
-#mlh-trust-badge {
-    display: block;
-    max-width: 100px;
-    min-width: 60px;
-    position: fixed;
-    right: 160px;
-    top: 0;
-    width: 10%;
-    z-index: 10000;
-
-    @include media-breakpoint-down(md) {
-        left: 30px;
-    }
-}
-
-#pinnacle-trust-badge {
-    display: block;
-    max-width: 100px;
-    min-width: 60px;
-    position: fixed;
-    right: 30px;
-    top: 0;
-    width: 10%;
-    z-index: 10000;
-    @include media-breakpoint-down(md) {
-        left: 130px;
-    }
-}
-
 img {
     -webkit-user-drag: none;
 }

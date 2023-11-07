@@ -27,7 +27,8 @@ const About = () => {
                                 We take pride in being a fully student organized
                                 event, while partnering with numerous other
                                 student-run engineering organizations at UC San
-                                Diego.
+                                Diego. This year, SD Hacks will be held in-person
+                                for the first time in over 3 years.
                             </Description>
                             <Description>
                                 SD Hacks 2023 will provide the support and
@@ -36,8 +37,7 @@ const About = () => {
                                 variety of engineering disciplines and
                                 companies, SD Hacks 2023 is shaping up to become
                                 an unforgettable 24 hours of collaboration,
-                                empowerment, and innovation. This year, SD Hacks
-                                will be held in the Price Center East Ballroom.
+                                empowerment, and innovation.
                             </Description>
                         </Fade>
                     </Col>

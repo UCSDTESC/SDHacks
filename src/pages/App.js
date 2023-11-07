@@ -16,7 +16,6 @@ const SDHacksPage = () => {
             <Tracks />
             <Faq />
             <Sponsors />
-            <Team />
         </>
     );
 };

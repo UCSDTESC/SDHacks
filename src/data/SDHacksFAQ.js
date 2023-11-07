@@ -12,14 +12,14 @@ const sdFaqData = [
         ),
     },
     {
-        question: 'What does a virtual hackathon look like?',
+        question: 'What should I bring?',
         answer: (
             <p>
-                SD Hacks is thoroughly adaptable to a socially distanced,
-                virtual environment. A dedicated online communication space will
-                allow our team to assist you with mentorship and captivating
-                tech talks, answer your pressing questions, and provide you with
-                software access from our sponsors!
+                Bring your student ID, computer, any external peripherals you may
+                need (chargers, monitors, etc.), any other hardware that you definitely
+                plan on using, and an open mind. Also bring a change of clothes, a
+                toothbrush, and any other toiletries you may need. You may also bring a
+                sleeping bag if you plan to nap.
             </p>
         ),
     },
@@ -87,7 +87,7 @@ const sdFaqData = [
         question: 'Are there any rules?',
         answer: (
             <p>
-                As a Major League Hacking member event, we are adopting Major
+                We are adopting Major
                 League Hacking’s{' '}
                 <a
                     href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"

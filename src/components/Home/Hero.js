@@ -24,12 +24,12 @@ const Hero = () => {
                         </h1>
                         <Button
                             size="lg"
-                            href="https://sd-hacks-2021.devpost.com/"
+                            href="https://forms.gle/Ba3ZD8jhoPCR6x486"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="mt-3"
                         >
-                            Devpost
+                            Apply now
                         </Button>
                     </div>
                 </Fade>

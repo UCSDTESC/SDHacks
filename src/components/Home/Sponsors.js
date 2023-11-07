@@ -9,6 +9,7 @@ import fb from '../../assets/sponsors/Facebook.png';
 import echoar from '../../assets/sponsors/echoAR.png';
 import datastax from '../../assets/sponsors/DataStax.png';
 import wolfram from '../../assets/sponsors/wolfram.svg';
+import viasat from '../../assets/sponsors/viasat.svg';
 import sm from '../../assets/sponsors/sticker-mule.svg';
 import cse from '../../assets/sponsors/jsoe-cse.svg';
 import sdsc from '../../assets/sponsors/SDSC.jpg';
@@ -81,6 +82,7 @@ const Sponsors = () => {
                         </div>
                     </SponsorContent>
 
+                    {/* 
                     <SectionHeader
                         css={`
                             color: var(--cyan);
@@ -97,6 +99,7 @@ const Sponsors = () => {
                         <div className="col-md-6"></div>
                         <div className="col-md-6"></div>
                     </div>
+*/}
                 </SectionContent>
             </Container>
         </SponsorsSection>
@@ -128,69 +131,14 @@ const SponsorContent = styled(SectionContent)`
 `;
 
 const tierOneSponsor = [
-    {
-        name: 'Northrop Grumman',
-        logo: northrop,
-        link: 'https://www.northropgrumman.com/Pages/default.aspx',
-        width: '100',
-    },
 ].map((x) => ({ ...x, tier: 0 }));
 
 const tierTwoSponsor = [
     {
-        name: 'Amazon Web Services',
-        logo: aws,
-        link: 'https://aws.amazon.com/',
-        width: '60',
-    },
-    {
-        name: 'UCSD CSE',
-        logo: cse,
-        link: 'https://cse.ucsd.edu/',
-        size: '100',
-    },
-    {
-        name: 'DataStax',
-        logo: datastax,
-        link: 'https://www.datastax.com/',
-        size: '100',
-    },
-    {
-        name: 'echoAR',
-        logo: echoar,
-        link:
-            'https://www.echoar.xyz/?gclid=Cj0KCQiAmL-ABhDFARIsAKywVaeWJMRPefyrDjU0z2apexRWkVvPVJU9rFZjWPjlyBBjMYzLLVTqke4aAhAAEALw_wcB',
+        name: 'Viasat',
+        logo: viasat,
+        link: 'https://www.viasat.com/',
         width: '80',
-    },
-    {
-        name: 'Facebook',
-        logo: fb,
-        link: 'https://about.fb.com/',
-        width: '90',
-    },
-    {
-        name: 'Google Cloud',
-        logo: gc,
-        link: 'https://cloud.google.com/',
-        width: '90',
-    },
-    {
-        name: 'KuzoClass',
-        logo: kuzo,
-        link: 'https://kuzoclass.com/',
-        width: '90',
-    },
-    {
-        name: 'Stickermule',
-        logo: sm,
-        link: 'http://hackp.ac/mlh-stickermule-hackathons',
-        width: '100',
-    },
-    {
-        name: 'San Diego Supercomputer Center',
-        logo: sdsc,
-        link: 'https://www.sdsc.edu/',
-        width: '100',
     },
     {
         name: 'Wolfram',

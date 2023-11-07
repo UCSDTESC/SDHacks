@@ -4,8 +4,8 @@ import styled from 'styled-components';
 
 import { ReactComponent as Learning } from '../../assets/icons/learning.svg';
 import { ReactComponent as Sustainability } from '../../assets/icons/sustainability.svg';
-import { ReactComponent as Urban } from '../../assets/icons/urban.svg';
-import { ReactComponent as Civic } from '../../assets/icons/civic.svg';
+import { ReactComponent as Integrity } from '../../assets/icons/integrity.svg';
+import { ReactComponent as SupplyChain } from '../../assets/icons/supplychain.svg';
 
 import Building from '../../assets/svg/building-jacobs.svg';
 
@@ -20,28 +20,28 @@ const Tracks = () => {
 
     const tracks = [
         {
-            name: 'remote education',
-            icon: <Learning />,
-            description:
-                'In this unprecedented time, families across the United States face challenges associated with the transition to remote learning, whether it be those facing connection inequity, individuals with special needs, or people experiencing homelessness.',
-        },
-        {
-            name: 'sustainability',
+            name: 'health/wellness',
             icon: <Sustainability />,
             description:
-                'Our climate is changing and it takes a systematic effort to combat it. This track encourages hackers to develop solutions tackling the challenges of climate change or educating the public about the environmental challenges we face.',
+            'Americans today face pressing health and wellness challenges. This track encourages hackers to develop solutions that improve healthcare, mental health, fitness, or general well-being.'
         },
         {
-            name: 'urban innovation',
-            icon: <Urban />,
+            name: 'cyber integrity',
+            icon: <Integrity />,
             description:
-                'In a growing society, we require new solutions tackling societal, environmental, and economic issues. This track spans everything from small neighborhood improvements to ambitious endeavors in large cities. Potential solutions include reducing carbon emissions, tackling transportation inequity, infrastructure improvements, or affordable housing.',
+                'In an era of growing cyber threats, misinformation, and privacy concerns, this track challenges hackers to innovate solutions that ensure the integrity of online spaces, protect users, and combat malicious activities.',
         },
         {
-            name: 'civic engagement',
-            icon: <Civic />,
+            name: 'education',
+            icon: <Learning />,
             description:
-                'In a country blighted by many challenges like rising concerns of inequity, and immense social changes, there is a need for more voices to be heard. Hackers are encouraged to develop solutions to amplify the voices of everyday people.',
+                'With the rapid transformation of education in the digital era, this track encapsulates technological solutions that address evolving needs in teaching and learning.',
+        },
+        {
+            name: 'supply chain',
+            icon: <SupplyChain />,
+            description:
+                'In an interconnected world, supply chain disruptions are more impactful than ever. This track challenges hackers to create innovative solutions that enhance the efficiency, transparency, and resilience of supply chains, ensuring the smooth flow of goods and minimizing disruptions in times of crisis.',
         },
     ];
 

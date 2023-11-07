@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import 'styled-components/macro';
 import { Container } from 'react-bootstrap';
-import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin, FaYoutube } from 'react-icons/fa';
+import { FaInstagram, FaGlobe } from 'react-icons/fa';
 
 import BuildingBottom from '../assets/svg/building-footer-b.svg';
 import BuildingRight from '../assets/svg/building-footer-r.svg';
@@ -48,11 +48,11 @@ const Footer = () => {
                     `}
                 >
                     <a
-                        href="https://www.facebook.com/SDHacks"
+                        href="https://tesc.ucsd.edu"
                         target="_blank"
                         rel="noreferrer noopener"
                     >
-                        <FaFacebook />
+                        <FaGlobe />
                     </a>
                     <a
                         href="https://www.instagram.com/sdhacks/"
@@ -60,27 +60,6 @@ const Footer = () => {
                         rel="noreferrer noopener"
                     >
                         <FaInstagram />
-                    </a>
-                    <a
-                        href="https://twitter.com/SDHacks"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                    >
-                        <FaTwitter />
-                    </a>
-                    <a
-                        href="https://www.linkedin.com/company/sd-hacks/"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                    >
-                        <FaLinkedin />
-                    </a>
-                    <a
-                        href="https://www.youtube.com/channel/UC2gbRQB_ScHK63q57rOQtmw"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                    >
-                        <FaYoutube />
                     </a>
                 </div>
 
