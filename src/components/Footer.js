@@ -55,7 +55,7 @@ const Footer = () => {
                         <FaGlobe />
                     </a>
                     <a
-                        href="https://www.instagram.com/sdhacks/"
+                        href="https://www.instagram.com/ucsdtesc/"
                         target="_blank"
                         rel="noreferrer noopener"
                     >
