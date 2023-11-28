@@ -15,14 +15,14 @@ const Hero = () => {
         <HeroWrapper>
             <Container>
                 <Fade>
-                    <img src={Logo} alt="logo" className="hero-logo" />
+                    {/*<img src={Logo} alt="logo" className="hero-logo" />*/}
                     <div className="cta">
-                        <h1 className="mb-4">
+                        {/*<h1 className="mb-4">
                             Price Center
                             <br />
                             East Ballroom
-                        </h1>
-                        <Button
+                        </h1>*/}
+                        {/*<Button
                             size="lg"
                             href="https://forms.gle/Ba3ZD8jhoPCR6x486"
                             target="_blank"
@@ -30,7 +30,8 @@ const Hero = () => {
                             className="mt-3"
                         >
                             Apply now
-                        </Button>
+    </Button>*/}
+                        <h1> Coming Soon! </h1>
                     </div>
                 </Fade>
             </Container>
