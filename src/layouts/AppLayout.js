@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
         <>
             <ParallaxProvider>
                 <Header
-                    navItems={['about', 'tracks', 'faq', 'sponsors', 'contact']}
+                    navItems={['about', 'tracks', 'faq', 'contact']}
                 />
                 <main>{children}</main>
                 <Footer />

@@ -60,49 +60,49 @@ function renderSponsors(currSponsors) {
 }
 
 const Sponsors = () => {
-    return (
-        <SponsorsSection className="sponsors">
-            <Container>
-                <SectionContent>
-                    <SectionHeader>
-                        <span
-                            css={`
-                                color: var(--cyan);
-                            `}
-                        >
-                            SPONSORS
-                        </span>
-                    </SectionHeader>
-                    <SponsorContent>
-                        <div className="row align-items-center justify-content-center">
-                            {renderSponsors(tierOneSponsor)}
-                        </div>
-                        <div className="row align-items-center justify-content-center">
-                            {renderSponsors(tierTwoSponsor)}
-                        </div>
-                    </SponsorContent>
+    return (<></>
+//         <SponsorsSection className="sponsors">
+//             <Container>
+//                 <SectionContent>
+//                     <SectionHeader>
+//                         <span
+//                             css={`
+//                                 color: var(--cyan);
+//                             `}
+//                         >
+//                             SPONSORS
+//                         </span>
+//                     </SectionHeader>
+//                     <SponsorContent>
+//                         <div className="row align-items-center justify-content-center">
+//                             {/* {renderSponsors(tierOneSponsor)} */}
+//                         </div>
+//                         <div className="row align-items-center justify-content-center">
+//                             {/* {renderSponsors(tierTwoSponsor)} */}
+//                         </div>
+//     </SponsorContent>
 
-                    {/* 
-                    <SectionHeader
-                        css={`
-                            color: var(--cyan);
-                        `}
-                    >
-                        PARTNERS
-                    </SectionHeader>
-                    <SponsorContent>
-                        <div className="row align-items-center justify-content-center">
-                            {renderSponsors(tierOnePartner)}
-                        </div>
-                    </SponsorContent>
-                    <div className="row">
-                        <div className="col-md-6"></div>
-                        <div className="col-md-6"></div>
-                    </div>
-*/}
-                </SectionContent>
-            </Container>
-        </SponsorsSection>
+//                     {/* 
+//                     <SectionHeader
+//                         css={`
+//                             color: var(--cyan);
+//                         `}
+//                     >
+//                         PARTNERS
+//                     </SectionHeader>
+//                     <SponsorContent>
+//                         <div className="row align-items-center justify-content-center">
+//                             {renderSponsors(tierOnePartner)}
+//                         </div>
+//                     </SponsorContent>
+//                     <div className="row">
+//                         <div className="col-md-6"></div>
+//                         <div className="col-md-6"></div>
+//                     </div>
+// */}
+//                 </SectionContent>
+//             </Container>
+//         </SponsorsSection>
     );
 };
 
